@@ -9,3 +9,15 @@ body {
 .bibbase_amazon {
     display: none;
 }
+
+.name {
+    text-align: left;
+    font-size: 2rem; 
+    font-weight: 400;
+}
+
+/* @media (min-width: 780px) { 
+    .name {
+        text-align: left;
+    }
+} */

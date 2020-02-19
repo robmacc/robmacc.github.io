@@ -1,65 +1,92 @@
 <html>
-  <head>
-    <title>Publications | Rob Maccallum</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />     -->
-    <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-  </head>
-
+    <head>
+        <title>Publications | Rob Maccallum</title>
+        <!-- Bootstrap 4 CSS -->
+        <link 
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        >
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" 
+         href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+         href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+         href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
 
   <body>
-
     <div class="row">
-      <div class="col-md-4">
-        <!-- <img style="width: 100%" src="picture.jpg"/> -->
-        <img src="picture.jpg" class="img-fluid" alt="Responsive image">
+        <!-- Profile Column -->
+        <div class="col-xl-4">
+            <!-- Header Image -->
+            <div>
+                <img style="width: 100%" src="picture.jpg"/>
+            </div>
 
-        <br>
-        <br>
-        <h2>Rob Maccallum</h2>
+            <!-- Name -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="name display-4">
+                        Rob Maccallum
+                    </h2>
+                </div>
+            </div>
 
-        <br>
-        Researching the use of neural networks to generate working chemical 
-        structures for the design of new drugs.
-        <br>
-        <br>
+            <!-- Bio -->
+            <div class="card">
+                <div class="card-body">
+                    Researching the use of neural networks to generate 
+                    chemical structures for the design of new drugs.
+                </div>
+            </div>
 
-        <a href="https://www.uct.ac.za/">University of Cape Town</a>,<br/>
-        South Africa<br/>
-        <br/>
+            <!-- Affiliations -->
+            <div class="card">
+                <div class="card-body">
+                    <a href="https://www.uct.ac.za/">University of Cape Town</a>,<br/>
+                    South Africa<br/>
+                </div>
+            </div>
 
-        <p>
-          Links:
-          <ul>
-            <li><a href="https://twitter.com/_robmacc">@Twitter</a></li>
-            <li><a href="https://github.com/robmacc">@Github</a></li>
-            <li><a href="https://www.goodreads.com/_robmacc">@Goodreads</a></li>
-            <li><a href="https://drive.google.com/file/d/1pPay4PpKp07vtc9H3p5E-NlMjpEf3Hz7/view?usp=sharing">CV</a></li>
-          </ul>
-        </p>
-        <div class="spacer">
-
+            <!-- Links -->
+            <div class="list-group">
+                <a href="https://twitter.com/_robmacc"
+                   class="list-group-item list-group-item-action text-primary">
+                    @Twitter
+                </a>
+                <a href="https://github.com/robmacc"
+                   class="list-group-item list-group-item-action text-primary">
+                    @Github
+                </a>
+                <a href="https://goodreads.com/_robmacc"
+                   class="list-group-item list-group-item-action text-primary">
+                    @Goodreads
+                </a>
+                <a href="https://drive.google.com/file/d/1pPay4PpKp07vtc9H3p5E-NlMjpEf3Hz7/view?usp=sharing"
+                   class="list-group-item list-group-item-action text-primary">
+                    CV
+                </a>
+            </div>
         </div>
-      </div>
-      
-      <!-- .................................. -->
-      
-      <div class="col-md-8">
 
-        <h2>Publications</h2>
-
-        <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Frobmacc%2Frobmacc.github.io%2Fmaster%2Fpubs.bib&jsonp=1"></script>
-
-      </div>
+        <!-- Publications Column -->
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="name">
+                        Publications
+                    </h2>
+                </div>
+            </div>
+            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Frobmacc%2Frobmacc.github.io%2Fmaster%2Fpubs.bib&jsonp=1">
+            </script>
+        </div>
     </div>
-
   </body>
 </html>
